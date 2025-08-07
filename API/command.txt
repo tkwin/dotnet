@@ -41,3 +41,6 @@ dotnet new gitignore
 $$ Git CLI $$
 # check the current git settings
 git config --list
+
+git config --global user.name "yourname"
+git config --globla user.email "email@domain.com.sg"
