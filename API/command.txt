@@ -1,0 +1,43 @@
+# Check development certificat is valid or not
+-- dotnet dev-certs https --check
+
+# build & run the project
+-- dotnet run
+
+# check the installed .NET SDK/runtime version
+dotnet --info
+
+# restore the packages inside package.json
+dotnet restore
+
+# check global tools installed
+dotnet tool list -g
+
+
+# install entity framework tool for migration
+dotnet tool install -g dotnet-ef
+dotnet tool install --global dotnet-ef
+
+
+# check ef CLI
+dotnet ef
+
+# ef migrations help
+dotnet ef migrations -h
+
+# create ef migration
+dotnet ef migrations add InitialCreate -o /Data/Migrations
+
+# update ef database
+dotnet ef database update
+
+
+# detect & watch code change (hot reload)
+dotnet watch
+
+# add gitignore file for dotnet files
+dotnet new gitignore
+
+$$ Git CLI $$
+# check the current git settings
+git config --list
