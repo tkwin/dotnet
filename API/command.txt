@@ -44,3 +44,17 @@ git config --list
 
 git config --global user.name "yourname"
 git config --globla user.email "email@domain.com.sg"
+
+
+$$ Angular CLI $$
+# install Angular CLI
+npm install -g @angular/cli
+
+# check Angular CLI version
+ng version
+
+# create new Angular project
+ng new client
+
+# run Angular application
+ng serve
