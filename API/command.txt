@@ -31,12 +31,23 @@ dotnet ef migrations add InitialCreate -o /Data/Migrations
 # update ef database
 dotnet ef database update
 
+# drop ef database
+dotnet ef database drop
 
 # detect & watch code change (hot reload)
 dotnet watch
 
 # add gitignore file for dotnet files
 dotnet new gitignore
+
+$$ Nuget packages $$
+# JWT token dependency
+System.IdentityModel.Tokens.JWT
+Microsoft.IdentityModel.Tokens
+
+# JWT Middleware dependency
+Microsoft.AspNetCore.Authentication.JwtBearer
+
 
 $$ Git CLI $$
 # check the current git settings
