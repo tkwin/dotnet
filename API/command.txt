@@ -69,3 +69,14 @@ ng new client
 
 # run Angular application
 ng serve
+
+# help about generation
+ng g --help
+
+# generate Angular components
+ng g c nav --dry-run
+ng g c layout/nav --skip-tests --dry-run
+
+
+# generate Angular services
+ng g s account-service --dry-run
