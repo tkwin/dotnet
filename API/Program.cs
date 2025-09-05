@@ -1,6 +1,7 @@
 using System.Text;
 using API.Data;
 using API.Interfaces;
+using API.Middleware;
 using API.Services;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
@@ -37,6 +38,9 @@ var app = builder.Build();
 
 app.UseCors(x => x.AllowAnyMethod().AllowAnyHeader()
    .WithOrigins("http://localhost:4200","https://localhost:4200"));
+
+app.UseMiddleware<ExceptionMiddleware>();
+// app.UseDeveloperExceptionPage();
 
 // Configure the HTTP request pipeline.
 // if (app.Environment.IsDevelopment())
